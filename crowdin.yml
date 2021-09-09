@@ -1,0 +1,3 @@
+files:
+  - source: /crowdin-poc/src/assets/i18n/en.json
+    translation: /crowdin-poc/src/assets/i18n/%two_letters_code%.json

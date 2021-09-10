@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco/transloco-root.module';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     TranslocoRootModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

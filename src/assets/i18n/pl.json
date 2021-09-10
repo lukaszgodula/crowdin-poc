@@ -3,5 +3,6 @@
     "description": "To przykładowy projekt Angulara",
     "test": "Kolejny testowy ciąg znaków",
     "header": "Header",
-    "footer": "Footer"
+    "footer": "Footer",
+    "section": "Section"
 }

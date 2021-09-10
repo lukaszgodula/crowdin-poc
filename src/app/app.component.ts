@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AvailableLangs, TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'crowdin-poc';
+  availableLangs: string[];
+  selectedLang: string;
+
+  constructor(private translocoService: TranslocoService) {
+    this.availableLangs = translocoService.getAvailableLangs() as string[];
+    this.selectedLang = translocoService.getActiveLang();
+  }
+
+  changeLang(lang: string): void {
+    this.translocoService.setActiveLang(lang);
+  }
 }

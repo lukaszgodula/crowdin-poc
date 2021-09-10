@@ -9,6 +9,7 @@ import { AvailableLangs, TranslocoService } from '@ngneat/transloco';
 export class AppComponent {
   availableLangs: string[];
   selectedLang: string;
+  showSideNav: boolean = false;
 
   constructor(private translocoService: TranslocoService) {
     this.availableLangs = translocoService.getAvailableLangs() as string[];

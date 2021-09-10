@@ -1,8 +1,39 @@
 <ng-container *transloco="let t">
-  <p>{{ t("title") }}</p>
+  <mat-toolbar color="primary">
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+      (click)="showSideNav = !showSideNav"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>{{ t("title") }}</span>
+  </mat-toolbar>
+  <mat-drawer-container class="drawer-container" autosize>
+    <mat-drawer mode="side" [opened]="showSideNav">
+      <mat-nav-list>
+        <mat-list-item>
+          <a>{{ t("nav-option-1") }}</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a>{{ t("nav-option-2") }}</a>
+        </mat-list-item>
+      </mat-nav-list>
+      
+    </mat-drawer>
+    <mat-drawer-content>
+      <mat-form-field appearance="fill">
+        <mat-label>{{ t("choose-lang") }}</mat-label>
+        <mat-select
+          [(ngModel)]="selectedLang"
+          (ngModelChange)="changeLang($event)"
+        >
+          <mat-option *ngFor="let lang of availableLangs" [value]="lang">
+            {{ lang }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-drawer-content>
+  </mat-drawer-container>
 </ng-container>
-<select [(ngModel)]="selectedLang" (ngModelChange)="changeLang($event)">
-  <option *ngFor="let lang of availableLangs">
-    {{ lang }}
-  </option>
-</select>

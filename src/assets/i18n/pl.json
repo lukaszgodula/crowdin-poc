@@ -1,4 +1,5 @@
 {
     "title": "Aplikacja Angular",
-    "description": "To przykładowy projekt Angulara"
+    "description": "To przykładowy projekt Angulara",
+    "test": "Kolejny testowy ciąg znaków"
 }

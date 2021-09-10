@@ -2,7 +2,7 @@
     "title": "Aplikacja Angular",
     "description": "To przykładowy projekt Angulara",
     "test": "Kolejny testowy ciąg znaków",
-    "header": "Header",
+    "header": "Nagłówek",
     "footer": "Footer",
     "section": "Section"
 }

@@ -19,8 +19,8 @@ jobs:
         upload_translations: true
         download_translations: false
         config: './crowdin.yml'
-        source: '/src/assets/i18n/en.json'
-        translation: '/src/assets/i18n/%two_letters_code%.json'
+        source: 'src/assets/i18n/en.json'
+        translation: 'src/assets/i18n/%two_letters_code%.json'
       env:
         CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
         CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}

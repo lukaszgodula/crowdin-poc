@@ -3,5 +3,6 @@
     "description": "This is POC Angular project",
     "test": "Another test string",
     "header": "Header",
-    "footer": "Footer"
+    "footer": "Footer",
+    "section": "Section"
 }

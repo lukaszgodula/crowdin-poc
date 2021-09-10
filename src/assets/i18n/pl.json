@@ -4,5 +4,8 @@
     "test": "Kolejny testowy ciąg znaków",
     "header": "Nagłówek",
     "footer": "Stopka",
-    "section": "Section"
+    "section": "Section",
+    "choose-lang": "Choose language",
+    "nav-option-1": "Option 1",
+    "nav-option-2": "Option 2"
 }

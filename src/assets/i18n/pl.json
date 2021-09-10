@@ -1,5 +1,11 @@
 {
     "title": "Aplikacja Angular",
     "description": "To przykładowy projekt Angulara",
-    "test": "Kolejny testowy ciąg znaków"
+    "test": "Kolejny testowy ciąg znaków",
+    "header": "Nagłówek",
+    "footer": "Stopka",
+    "section": "Section",
+    "choose-lang": "Choose language",
+    "nav-option-1": "Opcja 1",
+    "nav-option-2": "Option 2"
 }

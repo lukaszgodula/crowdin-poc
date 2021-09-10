@@ -1,6 +1,5 @@
 {
     "title": "Angular APP",
     "description": "This is POC Angular project",
-    "test": "Another test string",
-    "header": "Header"
+    "test": "Another test string"
 }

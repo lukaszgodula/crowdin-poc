@@ -3,7 +3,6 @@
     "description": "This is POC Angular project",
     "test": "Another test string",
     "header": "Header",
-    "footer": "Footer",
     "section": "Section",
     "choose-lang": "Choose language",
     "nav-option-1": "Option 1",
